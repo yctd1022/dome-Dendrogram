@@ -7,7 +7,76 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="">
+    <div class="source">
+      <div class="source_head">
+        <span>58.57.55.66</span>
+        <span>98</span>
+      </div>
+    </div>
+    <div class="attack">
+      <div class="attack_list">
+        <span>10.20.102.5</span>
+        <span>98</span>
+      </div>
+    </div>
+    <div class="details">
+      <div class="details_tail">
+        <span>HTTP_木马后门_webshell_ASP+ASPX_eval一句话webshell</span>
+        <span>98</span>
+      </div>
+    </div>
+  </div>
+  <style>
+    span {
+      display: block;
+      text-align: center;
+    }
+    .source {
+      width: 33%;
+      float: left;
+    }
+    .source_head,.attack_list, .details_tail{
+      height: 50px;
+      width: 130px;
+      border: 1px solid #ccc;
+    }
+    .source_head span,.attack_list span,.details_tail span{
+      height: 50%;
+      line-height: 1.5;
+    }
+    .source_head span:nth-child(1),.attack_list span:nth-child(1),.details_tail span:nth-child(1){
+      border-bottom: 1px solid #ccc;
+    }
+    .attack {
+      width: 33%;
+      float: left;
+    }
+    .details {
+      width: 33%;
+      float: left;
+    }
+    .details_tail {
+      width: 230px;
+    }
+    .details_tail span {
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      padding: 0 10px
+    }
+  </style>
+  <script>
+    var a = [
+              {
+              "srcip": "58.57.55.66",
+              "allcount": 98,
+              "detail": [
+                          {
+                          "dstip": "10.20.102.5",
+                          "detail_count": 98,
+                          "dstTypes": [
+                                        {
                                         "name": "HTTP_木马后门_webshell_ASP+ASPX_eval一句话webshell",
                                         "typeNumber": 98
                                         }
@@ -20,6 +89,6 @@
                         ]
               }
             ]
-  </script> -->
+  </script>
 </body>
 </html>
